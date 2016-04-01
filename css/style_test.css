@@ -1,0 +1,23 @@
+body{
+  font-size: 10px;
+}
+
+.boardFrame{
+  margin: 0 auto;
+  width: 31.2em;
+  width: 31.2em;
+}
+
+.row{
+
+
+}
+.squaresStyle {
+  border: 2px solid black;
+  width: 10em;
+  height: 10em;
+  display: inline-block;
+
+
+
+}
