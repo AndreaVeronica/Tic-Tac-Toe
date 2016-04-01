@@ -21,6 +21,16 @@
 //
 
 $(document).ready(function(){
-  console.log("loaded");
+
+    var $gameCells = $('.squaresStyle');
+
+
+    $($gameCells).one('click', function(){
+      console.log(this.id);
+    });
+
+
+
+
 
 });
