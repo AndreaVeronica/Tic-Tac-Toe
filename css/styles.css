@@ -188,8 +188,8 @@ input{
 
 /* Content for game page*/
 .boardFrame{
-  height: 600px;
-  width: 600px;
+  height: 500px;
+  width: 500px;
   margin: auto;
   padding: 0px;
 
@@ -201,8 +201,11 @@ input{
   width: 150px;
   position: relative;
   display: inline-block;
+  float: left;
   margin: 0px;
   padding: 0px;
+  font-size: 120px;
+  text-align: center;
 
 
 }

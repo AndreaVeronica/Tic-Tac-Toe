@@ -1,11 +1,11 @@
 body{
-  font-size: 10px;
+
 }
 
 .boardFrame{
   margin: 0 auto;
-  width: 31.2em;
-  width: 31.2em;
+  width: 330px;
+  width: 330px;
 }
 
 .row{
@@ -14,10 +14,16 @@ body{
 }
 .squaresStyle {
   border: 2px solid black;
-  width: 10em;
-  height: 10em;
+  width: 100px;
+  height: 100px;
   display: inline-block;
+  float: left;
 
 
 
+}
+
+.headerGame{
+  text-align: center;
+  margin: auto;
 }
