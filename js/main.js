@@ -30,8 +30,25 @@ $(document).ready(function() {
 
 
 // winning move ["x", "o", "", "x", "", "", "x", "o", ""]
+     $('.resetGame').on('click', function(){
+            $($gameCells).html("");
+            counter = 0;
+            turn = 'x';
+            moves = ["", "", "", "", "", "", "", "", ""]
+            console.log(counter, turn, moves);
+            $('#winnerIs').html("Winner is X!");
+            return startGame();
 
-    $($gameCells).one('click', function() {
+
+    })
+
+
+
+
+
+    $($gameCells).one('click', function startGame() {
+
+
         $(this).html(turn);
         moves[this.id] = turn;
 
@@ -46,7 +63,8 @@ $(document).ready(function() {
     });
 
 
-    $($gameCells).one('click', function(){
+
+    $($gameCells).on('click', function findWinner(){
 
     //test if winner found
     if (moves[0] == 'x' && moves[1] =='x' && moves[2] == 'x' ||
@@ -70,25 +88,17 @@ $(document).ready(function() {
         moves[2] == 'o' && moves[4] =='o' && moves[6] == 'o' ) {
           $('#winnerIs').html("Winner is O!");
           //gameCountO++;
-
-
       } else {
-
-         // $('#winnerIs').html("Draw!");
+            if (counter == 9){
+              $('#winnerIs').html("Draw!");
+            }
+         //
       }
 
 
      });
 
-     // function keepScore() {
-      //  if
 
-    //  }
-
-
-     // $('.resetGame').on('click', function(){
-
-     //  var empty = ["", "", "", "", "", "", "", "", ""];
 
       //  });
 

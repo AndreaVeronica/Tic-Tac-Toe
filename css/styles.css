@@ -92,7 +92,7 @@ input{
   width: 700px;
   margin: auto;
   margin-top: 20px;
-  display: none;
+  /*display: none;*/
 }
 
 .gameTitle {
