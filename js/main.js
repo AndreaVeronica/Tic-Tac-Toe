@@ -36,14 +36,14 @@ $(document).ready(function() {
             turn = 'x';
             moves = ["", "", "", "", "", "", "", "", ""]
             console.log(counter, turn, moves);
-            $('#winnerIs').html("Winner is X!");
-            return startGame();
+            $('#winnerIs').html("Winner is...");
+            startGame();
 
 
     })
 
 
-
+//this section starts the game, changes x to o
 
 
     $($gameCells).one('click', function startGame() {
@@ -64,30 +64,32 @@ $(document).ready(function() {
 
 
 
-    $($gameCells).on('click', function findWinner(){
+    $($gameCells).one('click', function findWinner(){
 
     //test if winner found
     if (moves[0] == 'x' && moves[1] =='x' && moves[2] == 'x' ||
         moves[3] == 'x' && moves[4] =='x' && moves[5] == 'x' ||
         moves[6] == 'x' && moves[7] =='x' && moves[8] == 'x' ||
         moves[0] == 'x' && moves[3] =='x' && moves[6] == 'x' ||
-        moves[1] == 'x' && moves[4] =='x' && moves[5] == 'x' ||
-        moves[6] == 'x' && moves[7] =='x' && moves[8] == 'x' ||
+        moves[1] == 'x' && moves[4] =='x' && moves[7] == 'x' ||
+        moves[2] == 'x' && moves[5] =='x' && moves[8] == 'x' ||
         moves[0] == 'x' && moves[4] =='x' && moves[8] == 'x' ||
         moves[2] == 'x' && moves[4] =='x' && moves[6] == 'x' ) {
-          $('#winnerIs').html("Winner is X!");
-          //gameCountX++;
+          $('#winnerIs').html("Winner is X!"), $($gameCells).off();
+          gameCountX++;
           console.log(gameCountX);
-      } else if (moves[0] == 'o' && moves[1] =='o' && moves[2] == 'o' ||
-        moves[3] == 'o' && moves[4] =='o' && moves[5] == 'o' ||
-        moves[6] == 'o' && moves[7] =='o' && moves[8] == 'o' ||
-        moves[0] == 'o' && moves[3] =='o' && moves[6] == 'o' ||
-        moves[1] == 'o' && moves[4] =='o' && moves[5] == 'o' ||
-        moves[6] == 'o' && moves[7] =='o' && moves[8] == 'o' ||
-        moves[0] == 'o' && moves[4] =='o' && moves[8] == 'o' ||
-        moves[2] == 'o' && moves[4] =='o' && moves[6] == 'o' ) {
-          $('#winnerIs').html("Winner is O!");
-          //gameCountO++;
+      }
+    else if(moves[0] == 'o' && moves[1] =='o' && moves[2] == 'o' ||
+            moves[3] == 'o' && moves[4] =='o' && moves[5] == 'o' ||
+            moves[6] == 'o' && moves[7] =='o' && moves[8] == 'o' ||
+            moves[0] == 'o' && moves[3] =='o' && moves[6] == 'o' ||
+            moves[1] == 'o' && moves[4] =='o' && moves[7] == 'o' ||
+            moves[2] == 'o' && moves[5] =='o' && moves[8] == 'o' ||
+            moves[0] == 'o' && moves[4] =='o' && moves[8] == 'o' ||
+            moves[2] == 'o' && moves[4] =='o' && moves[6] == 'o' ) {
+          $('#winnerIs').html("Winner is O!"), $($gameCells).off();
+          gameCountO++;
+          console.log(gameCountO);
       } else {
             if (counter == 9){
               $('#winnerIs').html("Draw!");
