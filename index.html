@@ -4,20 +4,36 @@
   <title>
     Tic Tac Toe
   </title>
-  <link rel="stylesheet" type="text/css" href="./css/reset.css">
-  <link rel="stylesheet" type="text/css" href="./css/styles.css">
-  <script type="text/javascript" src="./js/jquery-2.2.2.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script type="text/javascript" src="./js/jquery-2.2.2.min.js"></script>
   <script type="text/javascript" src="./js/main.js"></script>
-  <script type="text/javascript" src="./js/avatar.js"></script>
 </head>
 <body>
-    <header class="indexPage">
-        <div>
-            <h1 id="titlePage"> Tic Tac Toe </h1>
-            <h2 ><em> Grab a friend and play!</em></h2>
+    <header class="gamePage">
+        <div class="header">
         </div>
     </header>
-    <section>
+    <section class="scoreBoard" id="scoreID">
+        <h2 class="headerGame">Tic Tac Toe</h2>
+        <div class"scoreSection">
+            <div class="playersScoreBoard" id="playerX">
+            <h2 class="playersName" id="playerXName"> </h2>
+            <h3 id="xScore">Player X: </h3>
+            <img src=" " class="avatarMain">
+            <br>
+            <a href="#linkAvatarX"><button>Pick Avatar</button></a>
+            </div>
+            <div class="playersScoreBoard" id="playerO">
+            <h2 class="playersName" id="playerOName"> </h2>
+            <h3 id="oScore">Player O:</h3>
+            <img src=" " class="avatarMain">
+            <br>
+           <a href="#linkAvatarO"><button>Pick Avatar</button></a>
+            </div>
+        </div>
+    </section>
+   <!-- <section class=playerSection>
         <div class="playerProfiles">
             <div class="playerOpt1">
                 <h3> Player 1 </h3>
@@ -34,19 +50,32 @@
                 <div class="optionXO"> </div>
             </div>
         </div>
-        <div class ="pickPlayer">
-                <div class="avatar">
+     </section> -->
+     <section>
+        <div class="playerProfiles">
+                <div class="avatarX" id="linkAvatarX">
                     <h4 class="pickAnAvatar"></h4>
-                    <img src="./images/Andrea_pic.png " class="avatarChoice">
-                    <img src="./images/Keeley_pic.png" class="avatarChoice">
-                    <img src="./images/Rachel_pic.png" class="avatarChoice">
-                    <img src=" " class="avatarChoice">
-                    <img src=" " class="avatarChoice">
-                    <img src=" " class="avatarChoice">
+                    <img src="./images/Andrea_pic.png " class="avatarChoice" id="pic1">
+                    <img src="./images/Keeley_pic.png" class="avatarChoice" id="pic2">
+                    <img src="./images/Rachel_pic.png" class="avatarChoice" id="pic3">
+                    <img src="./images/chris_pic.png" class="avatarChoice" id="pic4">
+                    <img src=" " class="avatarChoice" id="pic5">
+                    <img src=" " class="avatarChoice" id="pic6">
+                    <a href="#scoreID"><button class="playPicX">Play Game</button></a>
                 </div>
-                <div class="gamePiece">
-                    <h4 class = "gameTitle">Pick a piece: </h4>
-                    <div class = "pickXO">
+                <div class="avatarO" id="linkAvatarO">
+                    <h4 class="pickAnAvatar"></h4>
+                    <img src="./images/Andrea_pic.png " class="avatarChoice" id="pic7">
+                    <img src="./images/Keeley_pic.png" class="avatarChoice" id="pic8">
+                    <img src="./images/Rachel_pic.png" class="avatarChoice" id="pic9">
+                    <img src="./images/chris_pic.png" class="avatarChoice" id="pic10">
+                    <img src=" " class="avatarChoice" id="pic11">
+                    <img src=" " class="avatarChoice" id="pic12">
+                    <a href="#scoreID"><button class="playPicX">Play Game</button></a>
+                </div>
+               <!--  <div class="gamePiece">
+                <h4 class = "gameTitle">Pick a piece: </h4>
+               <div class = "pickXO">
                             <div class="chooseX">
                                 <h5 class="pieceX"> X </h5>
                             </div>
@@ -54,19 +83,41 @@
                                 <h5 class="pieceO"> O </h5>
                             </div>
                     </div>
-                    <div class="pickColor">
+                   <div class="pickColor">
                         <h4 class = "gameTitle">Pick a color: </h4>
                         <div class="colors" id="colorWhite"> </div>
                         <div class="colors" id="colorPink"> </div>
-                        <div class="colors" id="colorRed"> </div>
-                        <div class="colors" id="colorPurple"> </div>
                         <div class="colors" id="colorBlue"> </div>
-                        <div class="colors" id="colorGreen"> </div>
                         <div class="colors" id="colorTeal"> </div>
                         <div class="colors" id="colorBlack"> </div>
                     </div>
-                </div>
+
+                </div>-->
         </div>
     </section>
+    <section class="gameSection">
+        <div class="boardFrame">
+            <div class="row" id="rowOne">
+                <div class="squaresStyle" id="0"></div>
+                <div class="squaresStyle" id="1"></div>
+                <div class="squaresStyle" id="2"> </div>
+            </div>
+            <div class="row" id="rowTwo">
+                <div class="squaresStyle" id="3"> </div>
+                <div class="squaresStyle" id="4"> </div>
+                <div class="squaresStyle" id="5"> </div>
+            </div>
+            <div class="row" id="rowThree">
+                <div class="squaresStyle" id="6"> </div>
+                <div class="squaresStyle" id="7"> </div>
+                <div class="squaresStyle" id="8"> </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h3 id="winnerIs"> Winner is... </h3>
+        <button class="resetGame"> Reset Game</button>
+        <a href="index.html"> <button class="newGame" > New Game</button> </a>
+    </footer>
 </body>
 </html>
