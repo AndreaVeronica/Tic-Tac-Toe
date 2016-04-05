@@ -2,6 +2,7 @@
 $(document).ready(function(){
 
 
+
         var $gameCells = $('.squaresStyle');
 
         //get array and counter
@@ -25,6 +26,7 @@ $(document).ready(function(){
 
     //this section starts the game, changes x to o
        startGame();
+
 
 
       /*function removeAllListerners() {
@@ -89,13 +91,58 @@ $(document).ready(function(){
                //index page Code //
                //index page Code //
 
+        // function pickImg(){
+       // $($.avatarChoice).one('click', function(){
+    // var $avatarImg = $(".avatarChoice");
+
+    //    $($avatarImg).on('click', function(){
+    //     $(this).attr('src', 'images/Andrea_pic.png');
+    //     console.log(this);
 
 
+    // })
+
+             // change pictures function
+        $('#pic1').click(function() {
+            $('#avatarX').attr('src', 'images/Andrea_pic.png');
+        });
+        $('#pic2').click(function() {
+            $('#avatarX').attr('src', 'images/Keeley_pic.png');
+        });
+        $('#pic3').click(function() {
+            $('#avatarX').attr('src', 'images/Rachel_pic.png');
+        });
+        $('#pic4').click(function() {
+            $('#avatarX').attr('src', 'images/Chris_pic.png');
+        });
+        $('#pic5').click(function() {
+            $('#avatarX').attr('src', 'images/David_pic.png');
+        });
+
+        $('#pic6').click(function() {
+            $('#avatarX').attr('src', 'images/Keeley_pic.png');
+        });
+        $('#pic7').click(function() {
+            $('#avatarO').attr('src', 'images/Andrea_pic.png');
+        });
+        $('#pic8').click(function() {
+            $('#avatarO').attr('src', 'images/Keeley_pic.png');
+        });
+        $('#pic9').click(function() {
+            $('#avatarO').attr('src', 'images/Rachel_pic.png');
+        });
+        $('#pic10').click(function() {
+            $('#avatarO').attr('src', 'images/Chris_pic.png');
+        });
+        $('#pic11').click(function() {
+            $('#avatarO').attr('src', 'images/David_pic.png');
+        });
+        $('#pic12').click(function() {
+            $('#avatarO').attr('src', 'images/Andrea_pic.png');
+        });
 
 
-
-
-
+//  }
 
 
 
