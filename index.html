@@ -8,6 +8,7 @@
   <link rel="stylesheet" type="text/css" href="./css/styles.css">
   <script type="text/javascript" src="./js/jquery-2.2.2.js"></script>
   <script type="text/javascript" src="./js/main.js"></script>
+  <script type="text/javascript" src="./js/avatar.js"></script>
 </head>
 <body>
     <header class="indexPage">
@@ -33,36 +34,38 @@
                 <div class="optionXO"> </div>
             </div>
         </div>
-        <div class="avatar">
-            <h4 class="pickAnAvatar"></h4>
-            <img src=" " class="avatarChoice">
-            <img src=" " class="avatarChoice">
-            <img src=" " class="avatarChoice">
-            <img src=" " class="avatarChoice">
-            <img src=" " class="avatarChoice">
-            <img src=" " class="avatarChoice">
-        </div>
-        <div class="gamePiece">
-            <h4 class = "gameTitle">Pick a piece: </h4>
-            <div class = "pickXO">
-                    <div class="chooseX">
-                        <h5 class="pieceX"> X </h5>
+        <div class ="pickPlayer">
+                <div class="avatar">
+                    <h4 class="pickAnAvatar"></h4>
+                    <img src="./images/Andrea_pic.png " class="avatarChoice">
+                    <img src="./images/Keeley_pic.png" class="avatarChoice">
+                    <img src="./images/Rachel_pic.png" class="avatarChoice">
+                    <img src=" " class="avatarChoice">
+                    <img src=" " class="avatarChoice">
+                    <img src=" " class="avatarChoice">
+                </div>
+                <div class="gamePiece">
+                    <h4 class = "gameTitle">Pick a piece: </h4>
+                    <div class = "pickXO">
+                            <div class="chooseX">
+                                <h5 class="pieceX"> X </h5>
+                            </div>
+                            <div class="chooseO">
+                                <h5 class="pieceO"> O </h5>
+                            </div>
                     </div>
-                    <div class="chooseO">
-                        <h5 class="pieceO"> O </h5>
+                    <div class="pickColor">
+                        <h4 class = "gameTitle">Pick a color: </h4>
+                        <div class="colors" id="colorWhite"> </div>
+                        <div class="colors" id="colorPink"> </div>
+                        <div class="colors" id="colorRed"> </div>
+                        <div class="colors" id="colorPurple"> </div>
+                        <div class="colors" id="colorBlue"> </div>
+                        <div class="colors" id="colorGreen"> </div>
+                        <div class="colors" id="colorTeal"> </div>
+                        <div class="colors" id="colorBlack"> </div>
                     </div>
-            </div>
-            <div class="pickColor">
-                <h4 class = "gameTitle">Pick a color: </h4>
-                <div class="colors" id="colorWhite"> </div>
-                <div class="colors" id="colorPink"> </div>
-                <div class="colors" id="colorRed"> </div>
-                <div class="colors" id="colorPurple"> </div>
-                <div class="colors" id="colorBlue"> </div>
-                <div class="colors" id="colorGreen"> </div>
-                <div class="colors" id="colorTeal"> </div>
-                <div class="colors" id="colorBlack"> </div>
-            </div>
+                </div>
         </div>
     </section>
 </body>

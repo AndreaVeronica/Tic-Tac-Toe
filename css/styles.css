@@ -174,11 +174,14 @@ input{
   margin-top: 20px;
 }
 
-.avatarchoice{
+.avatarChoice{
+  width: 200px;
+  padding-left: 30px;
+  margin-top: 20px;
 
 }
 .pickAnAvatar{
-
+ padding-left: 20px;
 }
 
 
@@ -191,9 +194,16 @@ input{
   height: 500px;
   width: 500px;
   margin: auto;
+  margin-bottom: 5px;
   padding: 0px;
 
 }
+.scoreBoard{
+  margin:40px 0px;
+  text-align: center;
+
+}
+
 
 .squaresStyle{
   border: 2px solid black;
@@ -212,10 +222,22 @@ input{
 .gamePage{
   text-align: center;
   color: black;
-  height: 150px;
+  height: 5px;
 }
 
+.headerGame{
+font-size: 50px;
+}
 
+h3{
+  font-size: 30px;
+}
+
+footer{
+   margin-top:  10px;
+   margin-bottom: 20px;
+   text-align: center;
+}
 
 
 

@@ -1,20 +1,3 @@
-//build game board
-// deply to gh-pages
-
-// Get a click event working
-//get 'x' working
-// get 'o' working
-
-// get counter working
-// push moves to array
-
-//build game board
-// deply to gh-pages
-
-/* var moves = Array(9).join(".").split('.');
- if (count % 2) {
-  moves[this.id]='x';
-}   */
 
 $(document).ready(function(){
 
@@ -43,6 +26,11 @@ $(document).ready(function(){
     //this section starts the game, changes x to o
        startGame();
 
+
+      /*function removeAllListerners() {
+        $($gameCells).off();
+      } */
+
      function startGame(){
             $($gameCells).one('click', function(){
             $(this).html(turn);
@@ -70,6 +58,7 @@ $(document).ready(function(){
             moves[2] == 'x' && moves[4] =='x' && moves[6] == 'x' ) {
               $('#winnerIs').html("Winner is X!"), $($gameCells).off();
               gameCountX++;
+              $('#xScore').html("X:" + " " + gameCountX);
               console.log(gameCountX);
           } else if(moves[0] == 'o' && moves[1] =='o' && moves[2] == 'o' ||
                 moves[3] == 'o' && moves[4] =='o' && moves[5] == 'o' ||
@@ -81,6 +70,7 @@ $(document).ready(function(){
                 moves[2] == 'o' && moves[4] =='o' && moves[6] == 'o' ) {
               $('#winnerIs').html("Winner is O!"), $($gameCells).off();
               gameCountO++;
+              $('#oScore').html("0:" + " " + gameCountO);
               console.log(gameCountO);
           } else {
                 if (counter == 9){
@@ -93,4 +83,25 @@ $(document).ready(function(){
 
         }
 
+
+               //index page Code //
+               //index page Code //
+               //index page Code //
+               //index page Code //
+
+
+
+
+
+
+
+
+
+
+
+
 });
+
+
+
+
