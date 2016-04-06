@@ -1,8 +1,9 @@
 body {
-  background-image: url(../images/aquafur.jpg);
+  background-image: url(../images/pretty_field.jpg);
   /*background-color: #99ffeb;*/
   background-size: cover;
   font-style: georgia;
+
 
 }
 
@@ -219,6 +220,11 @@ input{
   padding-top: 20px;
 
 }
+#whoWins{
+  height: 50px;
+  width: 30vw;
+
+}
 #playerO{
   background-color: rgba(255,255,255,.5);
   border-radius: 5px;
@@ -236,6 +242,7 @@ input{
   margin: auto;
   margin-bottom: 5px;
   padding: 0px;
+
 
 }
 .scoreBoard{
@@ -257,6 +264,9 @@ input{
   padding: 0px;
   font-size: 100px;
   text-align: center;
+  background-color: rgba(255,255,255,.5);
+  border-radius: 5px;
+
 
 
 }
@@ -274,10 +284,10 @@ h3{
   font-size: 30px;
 }
 
-footer{
+#whoWins{
    margin-top:  10px;
-   margin-bottom: 20px;
    text-align: center;
+
 }
 
 
