@@ -17,6 +17,8 @@ Project Notes:
 
 I made this game to complete the project one requirements for the WDI course. 
 
+
+
 Technologies Used:
 
 Languages - HTML5, CSS3, Javascript
@@ -24,10 +26,13 @@ Design - Adobe Indesign
 Project Planning & User Stories - Trello
 Sublime Text 3
 
+
 Wireframe:
-![Alt Image Text](./images/wire1.png "Original Page")
+
+![Alt Image Text](http://i.imgur.com/tgP6UkS.png) 
+
 Wireframe:
-![Alt Image Text](./images/wire2.png "Original Gameboard")
+![Alt Image Text](http://i.imgur.com/0HCkMno.png)
 
 Future Developments:
 
