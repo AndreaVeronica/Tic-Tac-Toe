@@ -32,6 +32,7 @@ body {
   width: 700px;
   margin: auto;
   display: none;
+  color: #4e260b;
 
 
 }
@@ -53,8 +54,8 @@ body {
 }*/
 
 h3{
- color: black;
- font-size: 24px;
+ color: #4a260b;
+ font-size: 20px;
 }
 
 .playerOpt1{
@@ -216,19 +217,20 @@ input{
 #playerX{
   background-color: rgba(255,255,255,.5);
   border-radius: 5px;
-  width: 30vw;
+  width: 20vw;
   padding-top: 20px;
 
 }
 #whoWins{
-  height: 50px;
-  width: 30vw;
+  height: 40px;
+  width: 50vw;
+
 
 }
 #playerO{
   background-color: rgba(255,255,255,.5);
   border-radius: 5px;
-  width: 30vw;
+  width: 20vw;
   padding-top: 20px;
 }
 
@@ -254,7 +256,7 @@ input{
 
 
 .squaresStyle{
-  border: 2px solid black;
+  border: 2px solid #4a260b;
   height: 130px;
   width: 130px;
   position: relative;
@@ -265,6 +267,7 @@ input{
   font-size: 100px;
   text-align: center;
   background-color: rgba(255,255,255,.5);
+ /* background-color: rgba(252,225,75,.5);*/
   border-radius: 5px;
 
 
@@ -277,7 +280,9 @@ input{
 }
 
 .headerGame{
-font-size: 40px;
+
+color: #4a260b;
+font-size: 36px;
 }
 
 h3{

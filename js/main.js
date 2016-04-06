@@ -72,7 +72,7 @@ $(document).ready(function(){
                 moves[2] == 'o' && moves[4] =='o' && moves[6] == 'o' ) {
               $('#winnerIs').html("Winner is O!"), $($gameCells).off();
               gameCountO++;
-              $('#oScore').html("Player 0:" + " " + gameCountO);
+              $('#oScore').html("Player O:" + " " + gameCountO);
               console.log(gameCountO);
           } else {
                 if (counter == 9){
