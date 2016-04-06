@@ -40,7 +40,7 @@ body {
   height: 450px;
   width: 700px;
   margin: auto;
-  display: none;
+ display: none;
 
 
 }
@@ -231,8 +231,8 @@ input{
 
 /* Content for game page*/
 .boardFrame{
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 400px;
   margin: auto;
   margin-bottom: 5px;
   padding: 0px;
@@ -248,14 +248,14 @@ input{
 
 .squaresStyle{
   border: 2px solid black;
-  height: 150px;
-  width: 150px;
+  height: 130px;
+  width: 130px;
   position: relative;
   display: inline-block;
   float: left;
   margin: 0px;
   padding: 0px;
-  font-size: 120px;
+  font-size: 100px;
   text-align: center;
 
 

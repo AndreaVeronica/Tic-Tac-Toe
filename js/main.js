@@ -60,7 +60,7 @@ $(document).ready(function(){
             moves[2] == 'x' && moves[4] =='x' && moves[6] == 'x' ) {
               $('#winnerIs').html("Winner is X!"), $($gameCells).off();
               gameCountX++;
-              $('#xScore').html("X:" + " " + gameCountX);
+              $('#xScore').html("Player X:" + " " + gameCountX);
               console.log(gameCountX);
           } else if(moves[0] == 'o' && moves[1] =='o' && moves[2] == 'o' ||
                 moves[3] == 'o' && moves[4] =='o' && moves[5] == 'o' ||
@@ -72,7 +72,7 @@ $(document).ready(function(){
                 moves[2] == 'o' && moves[4] =='o' && moves[6] == 'o' ) {
               $('#winnerIs').html("Winner is O!"), $($gameCells).off();
               gameCountO++;
-              $('#oScore').html("0:" + " " + gameCountO);
+              $('#oScore').html("Player 0:" + " " + gameCountO);
               console.log(gameCountO);
           } else {
                 if (counter == 9){
@@ -101,6 +101,27 @@ $(document).ready(function(){
 
 
     // })
+   // function changePicture(){
+   //     var $openAvatar = ('.loadPixX');
+
+   //      $('.loadPixX').on('click', function(){
+   //        console.log("testing");
+           $('.loadPixX').click(function(){
+                  $('#linkAvatarX').show();
+           })
+           $('.avatarChoice').click(function(){
+                  $('#linkAvatarX').hide();
+           })
+            $('.loadPixO').click(function(){
+                  $('#linkAvatarO').show();
+           })
+           $('.avatarChoice').click(function(){
+                  $('#linkAvatarO').hide();
+           })
+//            $("#show").click(function(){
+//     $("p").show();
+// });
+   //      $(".avatarX").css("display", "block");
 
              // change pictures function
         $('#pic1').click(function() {
@@ -118,7 +139,6 @@ $(document).ready(function(){
         $('#pic5').click(function() {
             $('#avatarX').attr('src', 'images/David_pic.png');
         });
-
         $('#pic6').click(function() {
             $('#avatarX').attr('src', 'images/Keeley_pic.png');
         });
@@ -141,8 +161,12 @@ $(document).ready(function(){
             $('#avatarO').attr('src', 'images/Andrea_pic.png');
         });
 
+    // });
 
-//  }
+    // }
+    $('.newGame').click(function(){
+      location.reload();
+    })
 
 
 
