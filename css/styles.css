@@ -33,6 +33,8 @@ body {
   margin: auto;
   display: none;
   color: #4e260b;
+  padding-left: 30px;
+  padding-top: 15px;
 
 
 }
@@ -43,6 +45,8 @@ body {
   width: 700px;
   margin: auto;
  display: none;
+ padding-left: 30px;
+ padding-top: 15px;
 
 
 }
@@ -295,6 +299,10 @@ h3{
 
 }
 
-
+#winnerIsText {
+  color: #4a260b;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
 
 

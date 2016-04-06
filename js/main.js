@@ -20,7 +20,7 @@ $(document).ready(function(){
                   turn = 'x';
                   moves = ["", "", "", "", "", "", "", "", ""];
                   //console.log(counter, turn, moves);
-                  $('#winnerIs').html("Winner is...");
+                  $('#winnerIs').html("X starts!");
                   startGame();
           })
 
@@ -140,7 +140,7 @@ $(document).ready(function(){
             $('#avatarX').attr('src', 'images/David_pic.png');
         });
         $('#pic6').click(function() {
-            $('#avatarX').attr('src', 'images/Keeley_pic.png');
+            $('#avatarX').attr('src', 'images/Jordan_pic.png');
         });
         $('#pic7').click(function() {
             $('#avatarO').attr('src', 'images/Andrea_pic.png');
@@ -158,7 +158,7 @@ $(document).ready(function(){
             $('#avatarO').attr('src', 'images/David_pic.png');
         });
         $('#pic12').click(function() {
-            $('#avatarO').attr('src', 'images/Andrea_pic.png');
+            $('#avatarO').attr('src', 'images/Jordan_pic.png');
         });
 
     // });
