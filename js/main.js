@@ -134,10 +134,10 @@ $(document).ready(function(){
             $('#avatarX').attr('src', 'images/Rachel_pic.png');
         });
         $('#pic4').click(function() {
-            $('#avatarX').attr('src', 'images/Chris_pic.png');
+            $('#avatarX').attr('src', 'images/Chris_pic1.png');
         });
         $('#pic5').click(function() {
-            $('#avatarX').attr('src', 'images/David_pic.png');
+            $('#avatarX').attr('src', 'images/David_pic1.png');
         });
         $('#pic6').click(function() {
             $('#avatarX').attr('src', 'images/Jordan_pic.png');
@@ -152,10 +152,10 @@ $(document).ready(function(){
             $('#avatarO').attr('src', 'images/Rachel_pic.png');
         });
         $('#pic10').click(function() {
-            $('#avatarO').attr('src', 'images/Chris_pic.png');
+            $('#avatarO').attr('src', 'images/Chris_pic1.png');
         });
         $('#pic11').click(function() {
-            $('#avatarO').attr('src', 'images/David_pic.png');
+            $('#avatarO').attr('src', 'images/David_pic1.png');
         });
         $('#pic12').click(function() {
             $('#avatarO').attr('src', 'images/Jordan_pic.png');
