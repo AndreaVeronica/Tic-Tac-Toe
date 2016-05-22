@@ -1,40 +1,36 @@
+## Tic-Tac-Toe
 
- Link to Game: 
- 
- 
- 
+### App Info
 
+This is a web app that allows users to play a classic childhood game with a personal twist.
 
-How to play:
-Player X picks and avatar. 
-Player O picks an avatar. 
+[Tic-Tac-Toe] (http://andreaveronica.github.io/Tic-Tac-Toe)
 
-Player X goes first. 
+### Trello:
 
-The objective of the game is for a player to get three boxes in a row (whether horizontally, vertically, diagonally). Player X starts and each turn is alternated until a winner is declared. If no winner is declared and all boxes are filled with a play, the game ends in Draw. 
+[Trello] (https://trello.com/b/R3m2f6OU/tic-tac-toe)
 
-Project Notes:
+### Technologies Used
 
-I made this game to complete the project one requirements for the WDI course. 
-
-
-
-Technologies Used:
-
-Languages - HTML5, CSS3, Javascript
-Design - Adobe Indesign
-Project Planning & User Stories - Trello
-Sublime Text 3
+- HTML
+- CSS
+- JavaScript/jQuery
+- Adobe InDesign
+- Bitmoji
 
 
-Wireframe:
 
-![Alt Image Text](http://i.imgur.com/tgP6UkS.png) 
+### Model Diagram
+![Homepage](http://i.imgur.com/tgP6UkS.png)
+![Game Board](http://i.imgur.com/nloZ5sF.jpg)
 
-Wireframe:
-![Alt Image Text](http://i.imgur.com/0HCkMno.png)
 
-Future Developments:
+###  Future Updates
+ - Add a color option for the game pieces.
 
-I have future plans to add a color option for the game pieces. The player will be able to pick x or o as well as a color style for their piece. The game will also log user names rather than listing "Player X: and Player O: "
+### User Story:
+
+The users of this game want to play Tic-Tac-Toe.
+The users of this game want to be able to play as different avatar choices.
+
 
