@@ -7,6 +7,10 @@ body {
 
 }
 
+#resetButton{
+  display: none;
+}
+
 /*.indexPage{
   text-align: center;
   color: black;
